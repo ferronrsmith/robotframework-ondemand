@@ -15,6 +15,8 @@ class Selenium2LibraryExt(KeywordGroup):
         # required for on failure in this class to work - call Selenium2Library's on failure
         _get_s2l()._run_on_failure()
 
+
+    # small hack for click event on android devices
     def click_page_element(self, locator):
         s2l = _get_s2l()
         elem = s2l._element_find(locator, True, True)

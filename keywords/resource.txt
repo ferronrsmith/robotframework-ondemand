@@ -10,9 +10,9 @@ ${LOGIN URL}      https://${HOST}/carepass/mobile/login
 ${ACCOUNT URL}    https://www.${HOST}/carepass/mobile/home
 ${VALID USER}     ferron.hanse
 ${VALID PASSWD}    Wizard12
-${BROWSER}        android
+${BROWSER}        iphone
 ${SELENIUM HOST}    http://ferron_smith:3d4930e4-9722-4bb9-82a2-fd380d5936a2@ondemand.saucelabs.com:80/wd/hub
-${DESIRED_CAPABILITIES}    name:Testing RobotFramework Selenium2Library,platform:android
+${DESIRED_CAPABILITIES}    name:Testing RobotFramework Selenium2Library,platform:iphone
 
 *** Keywords ***
 Open Login Page
@@ -33,7 +33,7 @@ Input Password
     Input Text    PASSWORD    ${password}
 
 Submit Credentials
-    Click Page Element    css=#loginForm > a
+    Click Page Element    css=#loginForm > input.button.save-mobile
 
 Account Page Should Be Open
     Location Should Be    ${ACCOUNT URL}
