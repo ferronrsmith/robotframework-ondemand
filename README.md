@@ -51,5 +51,5 @@ Full list of available [DESIRED_CAPABILITIES][3]
 [2]:	https://saucelabs.com/account
 [3]:	https://code.google.com/p/selenium/wiki/DesiredCapabilities
 
-[image-1]:	docs/img/screenshot_27.png "access_key"
-[image-2]:	docs/img/screenshot_28.png "user_name"
+[image-1]:docs/img/screenshot_27.png "access_key"
+[image-2]:docs/img/screenshot_28.png "user_name"
